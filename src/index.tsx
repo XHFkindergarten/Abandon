@@ -1,18 +1,22 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 
 import 'react-native-gesture-handler'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import Home from '@/pages/Home'
-import Other from '@/pages/Other'
+import Mobx from '@/pages/Mobx'
 import { RouteStackParamList } from './type'
+import { useCalendar } from '@/native/Calendar'
+import { ScrollView } from 'react-native'
 
 const Stack = createStackNavigator<RouteStackParamList>()
 
 const App: FC = () => {
+  // init calendar permission
+  useCalendar()
+
   return (
-    // <SafeAreaView>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
@@ -23,15 +27,14 @@ const App: FC = () => {
           }}
         />
         <Stack.Screen
-          name="Other"
-          component={Other}
+          name="Mobx"
+          component={Mobx}
           options={{
             title: '其他'
           }}
         />
       </Stack.Navigator>
     </NavigationContainer>
-    // </SafeAreaView>
   )
 }
 

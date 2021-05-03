@@ -8,7 +8,7 @@ import { StackNavigationProp } from '@react-navigation/stack'
 // 约束路由的参数类型
 export type RouteStackParamList = {
   Home: undefined
-  Other: undefined
+  Mobx: undefined
 }
 
 // 路由被注入的 navigation 类型
@@ -21,6 +21,6 @@ export type HomeRouteType = RouteProp<RouteStackParamList, 'Home'>
 
 export type OtherNavigationType = StackNavigationProp<
   RouteStackParamList,
-  'Other'
+  'Mobx'
 >
-export type OtherRouteType = RouteProp<RouteStackParamList, 'Other'>
+export type OtherRouteType = RouteProp<RouteStackParamList, 'Mobx'>

@@ -6,6 +6,11 @@
 - ReactNative
 - Mobx
 
+## 依赖仓库
+
+- 日历能力 [react-native-calendar-events](https://github.com/wmcmahan/react-native-calendar-events#Calendar-options)
+- 手势处理 [react-native-gesture-handler](https://github.com/software-mansion/react-native-gesture-handler#readme)
+
 ## 快速上手
 
 1. 安装依赖
