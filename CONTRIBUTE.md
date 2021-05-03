@@ -6,6 +6,33 @@
 - ReactNative
 - Mobx
 
+## 快速上手
+
+1. 安装依赖
+
+```
+yarn
+```
+
+2. 安装 IOS 依赖
+
+参考 [ReactNative 官网](https://reactnative.cn/docs/environment-setup) 进行环境搭建
+
+3. 启动 debugger
+
+```
+yarn start
+```
+
+4. 启动模拟器 & 打包
+
+```
+# 另起一个命令行
+yarn ios
+或者
+yarn android
+```
+
 ## 代码格式规范
 
 下载 Vscode 插件 `Prettier`
